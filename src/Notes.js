@@ -11,7 +11,7 @@ const Notes = () => {
       });
     function handleClick(){
         const ans = prompt("Enter a new Task")
-        if(ans===""||ans==" "){
+        if(ans===""||ans===" "){
             alert("Task cannot be empty");
         }
         else{
@@ -23,7 +23,7 @@ const Notes = () => {
     function handleDelete(){
         const del = prompt("Enter the task you want to delete");
         for(let i = 0;i<=notes.length;i++){
-            if(i==notes.length){
+            if(i===notes.length){
                 alert("Enter valid task.")
                 break;
             }
